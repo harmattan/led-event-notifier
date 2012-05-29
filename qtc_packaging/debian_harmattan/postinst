@@ -1,0 +1,5 @@
+#!/bin/sh
+
+start apps/led-event-notifier
+
+exit 0

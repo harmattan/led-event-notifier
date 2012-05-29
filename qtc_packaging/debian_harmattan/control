@@ -1,0 +1,22 @@
+Source: led-event-notifier
+Section: user/utilities
+Priority: optional
+Maintainer: Mohammad Abu-Garbeyyeh <mohammad7410@gmail.com>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.3
+
+Package: led-event-notifier
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: LED Event Notifier fires up the LED for notifications
+ LED Event Notifier monitors notifications and fires corresponding LEDs.
+ Configuration file is in ~/.config/MohammadAG/led-event-notifier.conf
+ .
+ Configuration style is
+ [x-nokia.call.missed]
+ mce-pattern=PATTERN_NAME_HERE
+ active=true/false
+ .
+ PATTERN_NAME_HERE can be any valid pattern as per /etc/mce/mce.ini
+ x-nokia.call.missed can be any pattern type
+XSBC-Maemo-Display-Name: LED Event Notifier

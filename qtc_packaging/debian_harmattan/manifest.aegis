@@ -1,0 +1,9 @@
+<aegis>
+        <request>
+                <credential name="mce::LEDControl" />
+                <credential name="UID::user" />
+                <credential name="GID::users" />
+                <credential name="GRP::users" />
+                <for path="/usr/bin/led-event-notifier" />
+	</request>
+</aegis>
